@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | 내 친구 불가사리</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/20210225_bulgasali_build.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/20210225_bulgasali_build.data",
+        frameworkUrl: "Build/20210225_bulgasali_build.framework.js",
+        codeUrl: "Build/20210225_bulgasali_build.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Delmetenz",
+        productName: "내 친구 불가사리",
+        productVersion: "0.12",
+      });
+    </script>
+  </body>
+</html>
